@@ -295,7 +295,7 @@ export PATH=$PATH:$GOPATH/bin
 #### Download and Compile IPFS
 
 ```
-$ git clone https://github.com/ipfs/kubo.git
+$ git clone https://github.com/897243839/kubo.git
 
 $ cd kubo
 $ make install
