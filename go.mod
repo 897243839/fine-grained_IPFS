@@ -3,7 +3,6 @@ module github.com/ipfs/kubo
 require (
 	bazil.org/fuse v0.0.0-20200117225306-7b5117fecadc
 	contrib.go.opencensus.io/exporter/prometheus v0.4.0
-	github.com/897243839/go-ds-flatfs v0.0.0-20230217143752-a6dbaa9202c9
 	github.com/benbjohnson/clock v1.3.0
 	github.com/blang/semver/v4 v4.0.0
 	github.com/cenkalti/backoff/v4 v4.1.3
@@ -24,6 +23,7 @@ require (
 	github.com/ipfs/go-delegated-routing v0.7.0
 	github.com/ipfs/go-detect-race v0.0.1
 	github.com/ipfs/go-ds-badger v0.3.0
+	github.com/ipfs/go-ds-flatfs v0.5.1
 	github.com/ipfs/go-ds-leveldb v0.5.0
 	github.com/ipfs/go-ds-measure v0.2.0
 	github.com/ipfs/go-fetcher v1.6.1
@@ -157,7 +157,6 @@ require (
 	github.com/ipfs/bbloom v0.0.4 // indirect
 	github.com/ipfs/go-bitfield v1.0.0 // indirect
 	github.com/ipfs/go-block-format v0.1.1 // indirect
-	github.com/ipfs/go-ds-flatfs v0.5.1 // indirect
 	github.com/ipfs/go-ipfs-delay v0.0.1 // indirect
 	github.com/ipfs/go-ipfs-ds-help v1.1.0 // indirect
 	github.com/ipfs/go-ipfs-pq v0.0.2 // indirect
@@ -207,7 +206,6 @@ require (
 	github.com/onsi/ginkgo/v2 v2.5.1 // indirect
 	github.com/opencontainers/runtime-spec v1.0.2 // indirect
 	github.com/openzipkin/zipkin-go v0.4.0 // indirect
-	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/polydawn/refmt v0.0.0-20201211092308-30ac6d18308e // indirect
 	github.com/prometheus/client_model v0.3.0 // indirect
