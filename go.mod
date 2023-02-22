@@ -3,7 +3,6 @@ module github.com/ipfs/kubo
 require (
 	bazil.org/fuse v0.0.0-20200117225306-7b5117fecadc
 	contrib.go.opencensus.io/exporter/prometheus v0.4.0
-	github.com/897243839/go-flatfs v0.0.0-20230218060706-3c484710a93f
 	github.com/benbjohnson/clock v1.3.0
 	github.com/blang/semver/v4 v4.0.0
 	github.com/cenkalti/backoff/v4 v4.1.3
@@ -112,6 +111,7 @@ require (
 )
 
 require (
+	github.com/897243839/go-flatfs v0.0.0-20230221025344-1b823f276e99 // indirect
 	github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96 // indirect
 	github.com/Kubuxu/go-os-helper v0.0.1 // indirect
 	github.com/alecthomas/units v0.0.0-20210927113745-59d0afb8317a // indirect
