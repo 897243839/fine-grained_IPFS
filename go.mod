@@ -111,7 +111,7 @@ require (
 )
 
 require (
-
+	github.com/897243839/go-flatfs v0.0.0-20230222074024-c1e2b558ee4d // indirect
 	github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96 // indirect
 	github.com/Kubuxu/go-os-helper v0.0.1 // indirect
 	github.com/alecthomas/units v0.0.0-20210927113745-59d0afb8317a // indirect
