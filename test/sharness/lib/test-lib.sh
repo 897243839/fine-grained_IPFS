@@ -194,7 +194,7 @@ test_config_set() {
 }
 
 test_init_ipfs() {
-
+  args=("$@")
 
   # we set the Addresses.API config variable.
   # the cli client knows to use it, so only need to set.
@@ -202,7 +202,7 @@ test_init_ipfs() {
 
   test_expect_success "ipfs init succeeds" '
     export IPFS_PATH="$(pwd)/.ipfs" &&
-    ipfs init --profile=test > /dev/null
+    ipfs init "${args[@]}" --profile=test > /dev/null
   '
 
   test_expect_success "prepare config -- mounting" '
@@ -212,13 +212,6 @@ test_init_ipfs() {
     test_fsh cat "\"$IPFS_PATH/config\""
   '
 
-}
-
-test_config_ipfs_gateway_writable() {
-  test_expect_success "prepare config -- gateway writable" '
-    test_config_set --bool Gateway.Writable true ||
-    test_fsh cat "\"$IPFS_PATH/config\""
-  '
 }
 
 test_wait_for_file() {
@@ -247,7 +240,7 @@ test_set_address_vars() {
     API_ADDR=$(convert_tcp_maddr $API_MADDR) &&
     API_PORT=$(port_from_maddr $API_MADDR) &&
 
-    GWAY_MADDR=$(sed -n "s/^Gateway (.*) server listening on //p" "$daemon_output") &&
+    GWAY_MADDR=$(sed -n "s/^Gateway server listening on //p" "$daemon_output") &&
     GWAY_ADDR=$(convert_tcp_maddr $GWAY_MADDR) &&
     GWAY_PORT=$(port_from_maddr $GWAY_MADDR)
   '
