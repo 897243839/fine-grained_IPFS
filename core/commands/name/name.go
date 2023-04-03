@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
+	"github.com/ipfs/boxo/ipns"
+	ipns_pb "github.com/ipfs/boxo/ipns/pb"
 	cmds "github.com/ipfs/go-ipfs-cmds"
-	"github.com/ipfs/go-ipns"
-	ipns_pb "github.com/ipfs/go-ipns/pb"
 	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
 	"github.com/ipld/go-ipld-prime"
 	"github.com/ipld/go-ipld-prime/codec/dagcbor"
@@ -222,6 +222,20 @@ Passing --verify will verify signature against provided public key.
 				// Peer ID.
 				if len(entry.PubKey) > 0 {
 					pub, err = ic.UnmarshalPublicKey(entry.PubKey)
+					if err != nil {
+						return err
+					}
+
+					// Verify the public key matches the name we are verifying.
+					entryID, err := peer.IDFromPublicKey(pub)
+
+					if err != nil {
+						return err
+					}
+
+					if id != entryID {
+						return fmt.Errorf("record public key does not match the verified name")
+					}
 				}
 			}
 			if err != nil {
