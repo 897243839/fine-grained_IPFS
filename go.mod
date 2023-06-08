@@ -17,7 +17,7 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/google/uuid v1.3.0
 	github.com/hashicorp/go-multierror v1.1.1
-	github.com/ipfs/boxo v0.8.0-rc3
+	github.com/ipfs/boxo v0.9.0
 	github.com/ipfs/go-block-format v0.1.2
 	github.com/ipfs/go-cid v0.4.0
 	github.com/ipfs/go-cidutil v0.1.0
@@ -30,9 +30,9 @@ require (
 	github.com/ipfs/go-fs-lock v0.0.7
 	github.com/ipfs/go-graphsync v0.14.0
 	github.com/ipfs/go-ipfs-cmds v0.9.0
-	github.com/ipfs/go-ipld-format v0.4.0
+	github.com/ipfs/go-ipld-format v0.5.0
 	github.com/ipfs/go-ipld-git v0.1.1
-	github.com/ipfs/go-ipld-legacy v0.1.1
+	github.com/ipfs/go-ipld-legacy v0.2.1
 	github.com/ipfs/go-log v1.0.5
 	github.com/ipfs/go-log/v2 v2.5.1
 	github.com/ipfs/go-metrics-interface v0.0.1
@@ -52,7 +52,7 @@ require (
 	github.com/libp2p/go-libp2p-pubsub v0.9.0
 	github.com/libp2p/go-libp2p-pubsub-router v0.6.0
 	github.com/libp2p/go-libp2p-record v0.2.0
-	github.com/libp2p/go-libp2p-routing-helpers v0.6.2
+	github.com/libp2p/go-libp2p-routing-helpers v0.7.0
 	github.com/libp2p/go-libp2p-testing v0.12.0
 	github.com/libp2p/go-socket-activation v0.1.0
 	github.com/mitchellh/go-homedir v1.1.0
@@ -100,7 +100,6 @@ require (
 	github.com/alecthomas/units v0.0.0-20210927113745-59d0afb8317a // indirect
 	github.com/alexbrainman/goissue34681 v0.0.0-20191006012335-3fc7a47baff5 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/containerd/cgroups v1.0.4 // indirect
@@ -139,6 +138,7 @@ require (
 	github.com/huin/goupnp v1.0.3 // indirect
 	github.com/ipfs/bbloom v0.0.4 // indirect
 	github.com/ipfs/go-bitfield v1.1.0 // indirect
+	github.com/ipfs/go-ds-flatfs v0.5.1 // indirect
 	github.com/ipfs/go-ipfs-blockstore v1.3.0 // indirect
 	github.com/ipfs/go-ipfs-delay v0.0.1 // indirect
 	github.com/ipfs/go-ipfs-ds-help v1.1.0 // indirect
