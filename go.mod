@@ -17,7 +17,7 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/google/uuid v1.3.0
 	github.com/hashicorp/go-multierror v1.1.1
-	github.com/ipfs/boxo v0.8.0-rc3
+	github.com/ipfs/boxo v0.10.1
 	github.com/ipfs/go-block-format v0.1.2
 	github.com/ipfs/go-cid v0.4.0
 	github.com/ipfs/go-cidutil v0.1.0
@@ -30,14 +30,14 @@ require (
 	github.com/ipfs/go-fs-lock v0.0.7
 	github.com/ipfs/go-graphsync v0.14.0
 	github.com/ipfs/go-ipfs-cmds v0.9.0
-	github.com/ipfs/go-ipld-format v0.4.0
+	github.com/ipfs/go-ipld-format v0.5.0
 	github.com/ipfs/go-ipld-git v0.1.1
-	github.com/ipfs/go-ipld-legacy v0.1.1
+	github.com/ipfs/go-ipld-legacy v0.2.1
 	github.com/ipfs/go-log v1.0.5
 	github.com/ipfs/go-log/v2 v2.5.1
 	github.com/ipfs/go-metrics-interface v0.0.1
 	github.com/ipfs/go-metrics-prometheus v0.0.2
-	github.com/ipfs/go-unixfsnode v1.6.0
+	github.com/ipfs/go-unixfsnode v1.7.1
 	github.com/ipld/go-codec-dagpb v1.6.0
 	github.com/ipld/go-ipld-prime v0.20.0
 	github.com/jbenet/go-random v0.0.0-20190219211222-123a90aedc0c
@@ -52,7 +52,7 @@ require (
 	github.com/libp2p/go-libp2p-pubsub v0.9.0
 	github.com/libp2p/go-libp2p-pubsub-router v0.6.0
 	github.com/libp2p/go-libp2p-record v0.2.0
-	github.com/libp2p/go-libp2p-routing-helpers v0.6.2
+	github.com/libp2p/go-libp2p-routing-helpers v0.7.0
 	github.com/libp2p/go-libp2p-testing v0.12.0
 	github.com/libp2p/go-socket-activation v0.1.0
 	github.com/mitchellh/go-homedir v1.1.0
@@ -100,7 +100,6 @@ require (
 	github.com/alecthomas/units v0.0.0-20210927113745-59d0afb8317a // indirect
 	github.com/alexbrainman/goissue34681 v0.0.0-20191006012335-3fc7a47baff5 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/containerd/cgroups v1.0.4 // indirect
@@ -139,6 +138,7 @@ require (
 	github.com/huin/goupnp v1.0.3 // indirect
 	github.com/ipfs/bbloom v0.0.4 // indirect
 	github.com/ipfs/go-bitfield v1.1.0 // indirect
+	github.com/ipfs/go-ds-flatfs v0.5.1 // indirect
 	github.com/ipfs/go-ipfs-blockstore v1.3.0 // indirect
 	github.com/ipfs/go-ipfs-delay v0.0.1 // indirect
 	github.com/ipfs/go-ipfs-ds-help v1.1.0 // indirect
@@ -186,6 +186,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.5.1 // indirect
 	github.com/opencontainers/runtime-spec v1.0.2 // indirect
 	github.com/openzipkin/zipkin-go v0.4.1 // indirect
+	github.com/petar/GoLLRB v0.0.0-20210522233825-ae3b015fd3e9 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/polydawn/refmt v0.89.0 // indirect
@@ -207,6 +208,7 @@ require (
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/ucarion/urlpath v0.0.0-20200424170820-7ccc79b76bbb // indirect
 	github.com/whyrusleeping/base32 v0.0.0-20170828182744-c30ac30633cc // indirect
+	github.com/whyrusleeping/cbor v0.0.0-20171005072247-63513f603b11 // indirect
 	github.com/whyrusleeping/cbor-gen v0.0.0-20230126041949-52956bd4c9aa // indirect
 	github.com/whyrusleeping/chunker v0.0.0-20181014151217-fe64bd25879f // indirect
 	github.com/whyrusleeping/go-keyspace v0.0.0-20160322163242-5b898ac5add1 // indirect
