@@ -1,0 +1,14 @@
+a fine-grained compression scheme for the native IPFS protocol 
+version ：Kubo-0.19.1-Combination-Control-SO2 (all defaults)
+
+The default configuration for Kubo-0.19.1-Combination-Control-SO2 is as follows:
+
+- The initial compression algorithm selected is 6: ANS.
+- Compression is performed during upload, and the conversion time for hot data tables is set to 30 days.
+- During transmission, compression is applied based on the preferred settings. All data blocks that have not been compressed (excluding path blocks) are compressed before sending.
+- The library libhigcompcache2.so: nvcomp, which supports dependency, is used.
+- The GPU compression algorithm version nvcomp_3.0.5_x86_64_12.x.tgz is used.
+- The optional optimization of the block pre-request approach is available.
+- After the initial launch of ipfs, a configuration file named blockhot.json is generated in the ipfs root directory.
+- The above settings can be modified by editing the blockhot.json configuration file located at ./ipfs/blocks/blockhot.json.
+-The default number of coroutines being started is 10.
